@@ -1,12 +1,13 @@
-//Classe
+import prompt from 'prompt-sync';
 class Personagens{
-    nome: string = '';
-    nivel: number = 1;
-    arma: string = '';
-    dano: number = 5;
-    vida: number = 150;
+    constructor(
+        public nome: string, 
+        public arma: string,
+        public nivel: number,
+        public dano: number,
+        public vida: number) {}
 }
 
-var lutador: Personagens;
-lutador = new Personagens()
+let entrada = prompt()
+var lutador: Personagens = new Personagens('Kratos', 'Machado', 1, 5, 150);
 console.log('Lutador:', lutador);
