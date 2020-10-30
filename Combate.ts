@@ -24,5 +24,38 @@ while(num != 9){
     console.log('+------------------------+');
     
     num = +entrada('Opção: ')
+
+    switch (num) {
+        case 1:
+            treino()
+            break;
     
+        default:
+            break;
+    }
+}
+
+function treino(){
+    let treino: number;
+
+    console.log('+-----------------+');
+    console.log('|   Treinamento   |');
+    console.log('+-----------------+');
+
+    console.log(`Escolha um para Treinar:\n1-Kratos ${lutador0.nivel}\n2-Steve ${lutador1.nivel}\n3-Não treinar\n`);
+
+    treino = +entrada('Opção: ')
+    switch (treino) {
+        case 1:
+            console.log('Kratos');
+            console.log('Treino bem sucedido!');
+            break;
+        case 2:
+            console.log('Steve');
+            console.log('Treino bem sucedido!');
+            break;
+        default:
+            console.log('Ok! Saindo...');
+            break;
+    }
 }
