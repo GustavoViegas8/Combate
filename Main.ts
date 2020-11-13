@@ -1,9 +1,11 @@
-import Personagens from "./Combate";
+import { Personagens } from "./Personagens";
 import prompt from 'prompt-sync';
+import { Melee } from "./Melee";
+import { Ranged } from "./Ranged";
 let entrada = prompt()
 
-var lutador0: Personagens = new Personagens('Kratos', 'Machado', 1, 20, 150);
-var lutador1: Personagens = new Personagens('Eduardo Pool Party','Espada', 1, 15, 200);
+var melee: Personagens = new Melee('Kratos');
+var ranged: Personagens = new Ranged('Eduardo Pool Party');
 
 let num: number; num = 0;
 
@@ -39,7 +41,7 @@ function treino(){
     console.log('|   Treinamento   |');
     console.log('+-----------------+');
 
-    console.log(`Escolha um para Treinar:\n1-Kratos ${lutador0.nivel}\n2-Steve ${lutador1.nivel}\n3-Não treinar\n`);
+    console.log(`Escolha um para Treinar:\n1-Kratos ${Melee.nivel}\n2-Steve ${lutador1.nivel}\n3-Não treinar\n`);
 
     treino = +entrada('Opção: ')
     switch (treino) {
