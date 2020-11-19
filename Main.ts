@@ -5,7 +5,7 @@ import { Ranged } from "./Ranged";
 let entrada = prompt()
 
 var melee: Personagens = new Melee('Kratos');
-var ranged: Personagens = new Ranged('Eduardo Pool Party');
+var ranged: Personagens = new Ranged('Steve');
 
 let num: number; num = 0;
 
@@ -41,7 +41,7 @@ function treino(){
     console.log('|   Treinamento   |');
     console.log('+-----------------+');
 
-    console.log(`Escolha um para Treinar:\n1-Kratos ${Melee.nivel}\n2-Steve ${lutador1.nivel}\n3-Não treinar\n`);
+    console.log(`Escolha um para Treinar:\n1-Kratos\n2-Steve\n3-Não treinar\n`);
 
     treino = +entrada('Opção: ')
     switch (treino) {

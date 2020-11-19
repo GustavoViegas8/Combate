@@ -15,5 +15,4 @@ export class Ranged extends Personagens {
         this._dano = Form.aleatorizar(5, 15);
         this._vida = Form.aleatorizar(30, 70);
     }
-
 }

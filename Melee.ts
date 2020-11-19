@@ -15,5 +15,4 @@ export class Melee extends Personagens {
         this._dano = Form.aleatorizar(1, 15);
         this._vida = Form.aleatorizar(50, 100);
     }
-
 }
